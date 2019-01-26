@@ -1,15 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { ElementBoardComponent } from './element-board/element-board.component';
 import { ElementComponent } from './element/element.component';
-import { ElementTableComponent } from './element-table/element-table.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ElementComponent,
-    ElementTableComponent
+    ElementBoardComponent
   ],
   imports: [
     BrowserModule
