@@ -1,3 +1,18 @@
-<p>
-  {{element.name}}
-</p>
+<!-- <div
+title={element.name}
+onMouseEnter={this.onMouseEnter}
+onMouseLeave={this.onMouseLeave}
+onClick={this.openInfo}
+className={`element element-${num} ${element.category} ${
+  this.state.hover ? 'active' : ''
+}`}>
+<div className="number">{element.number}</div>
+<div className="symbol">{element.symbol}</div>
+<div className="element-name">{element.name}</div>
+</div> -->
+
+<div [ngClass]="this.elementClass">
+  <div class="number">{{element.number}}</div>
+  <div class="symbol">{{element.symbol}}</div>
+  <div class="name">{{element.name}}</div>
+</div>

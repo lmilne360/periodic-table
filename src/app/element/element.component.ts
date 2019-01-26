@@ -7,12 +7,16 @@ import { Element } from './model/element.model';
   styleUrls: ['./element.component.scss']
 })
 export class ElementComponent implements OnInit {
-
   @Input()
   element: Element;
-  constructor() { }
+  elementClass: string[];
+  constructor() {}
 
   ngOnInit() {
+    this.elementClass = [
+      'element',
+      `element-${this.element.number}`,
+      `${this.element.category}`
+    ];
   }
-
 }
