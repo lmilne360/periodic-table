@@ -1,0 +1,24 @@
+.element {
+    cursor: pointer;
+    width: 5vw;
+    height: 5vw;
+    padding: 2px;
+    border: 1px solid #333333;
+    border-collapse: collapse;
+    overflow: hidden;
+    .number {
+        float: left;
+        font-size: 0.5vw;
+        position: absolute;
+    }
+    .symbol {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0.5vw;
+        font-size: 2.5vw;
+    }
+    .name {
+        font-size: 0.8vw;
+        text-align: center;
+    }
+}
