@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Element } from './element/model/element.model';
+import elements from '../assets/PeriodicTableJSON.json';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'periodic-table';
+  elements: Element[] = elements.elements;
 }

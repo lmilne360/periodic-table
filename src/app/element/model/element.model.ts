@@ -4,7 +4,7 @@ export interface Element {
   atomic_mass:   number;
   boil:          number;
   category:      string;
-  color:         null;
+  color:         null | string;
   density:       number;
   discovered_by: string;
   melt:          number;
