@@ -1,1 +1,10 @@
-<app-element *ngFor="let element of elements" [element]="element"></app-element>
+<div class="wrapper">
+  <h1>Period Table of The Elements</h1>
+
+  <div id="table">
+    <app-element
+      *ngFor="let element of elements"
+      [element]="element"
+    ></app-element>
+  </div>
+</div>
