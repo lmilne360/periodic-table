@@ -1,4 +1,60 @@
 #table {
     display: grid;
     grid-template-columns: repeat(17, auto) 1fr;
+    list-style: none;
 }
+
+
+#table > li:nth-child(5), #table > li:nth-child(13) {
+  grid-column-start: 13;
+}
+#table {
+  //helium
+  li:nth-child(2) {
+    grid-column-start: 18;
+  }
+  li:nth-child(72)  {
+    grid-column-start: 3;
+  }
+  //cerium
+  // li:nth-child(58)  {
+  //   grid-column-start: 3;
+  // }
+  // li:nth-child(90) {grid-column-start: 3;}
+}
+#table > li:nth-child(n+58):nth-last-child(n+48) {
+  grid-row-start: 8;
+}
+#table > li:nth-child(n+90):nth-last-child(n+16) {
+  grid-row-start: 9;
+}
+
+// /* Helium to the top right  */
+
+// [data-index="2"] {
+//     grid-column-start: -2;
+// }
+
+// /* Boron & Alumunium to the right  */
+
+// [data-index="5"],
+// [data-index="13"] {
+//     grid-column-start: 13;
+// }
+
+// /* Lanthinide & Actinoid split  */
+// .element-58,
+// .element-90,
+// [data-index="58"],
+// [data-index="90"] {
+//   grid-column-start: 3;
+// }
+
+
+
+// .element-72,
+// [data-index="72"],
+// .element-104,
+// [data-index="104"]{
+//   grid-column-start: 4;
+// }
