@@ -1,30 +1,53 @@
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 #table {
     display: grid;
     grid-template-columns: repeat(17, auto) 1fr;
     list-style: none;
+    padding-left: 0;
+    >li {
+        position: relative;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 }
 
 /* COLUMN */
+
 #table {
-  //helium
-  li:nth-child(2) {
-    grid-column-start: 18;
-  }
-  li:nth-child(5),li:nth-child(13) {
-    grid-column-start: 13;
-  }
-  li:nth-child(72)  {
-    grid-column-start: 3;
-  }
+    //helium
+    li:nth-child(2) {
+        grid-column-start: 18;
+    } //baron & aluminum
+    li:nth-child(5),
+    li:nth-child(13) {
+        grid-column-start: 13;
+
+    }
+
+    // THIS NOT WORKING as expected
+    // li:nth-child(58),
+    // li:nth-child(90) {
+    //     grid-column-start: 3;
+    // }
 }
 
-
 /* ROW STYLING */
+
 #table {
-  li:nth-child(n+58):nth-last-child(n+48) {
-    grid-row-start: 8;
-  }
-  li:nth-child(n+90):nth-last-child(n+16) {
-    grid-row-start: 9;
-  }
+    //Cerium -> Lutetium
+    li:nth-child(n+58):nth-last-child(n+49) {
+        grid-row-start: 9;
+    } // Thorium
+    li:nth-child(n+90):nth-last-child(n+17) {
+        grid-row-start: 10;
+    }
 }

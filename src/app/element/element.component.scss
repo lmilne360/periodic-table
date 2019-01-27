@@ -23,13 +23,59 @@
     }
 }
 
-// /* Helium to the top right  */
-// app-element .element-2 {
-//   grid-column-start: -2;
-// }
+.lanthanide {
+  background: #cc99ff;
+  /* Put a space to seperate the split table  */
+  margin-top: 2.5vw;
+}
+.element-57 {
+  margin: 0;
+}
 
-// /* Boron & Alumunium to the right  */
-// .element-5,
-// .element-13 {
-//   grid-column-start: 13;
-// }
+/* GROUPS STYLING */
+
+/* Noble Gas  */
+.noble {
+  background: #f3d2e8;
+}
+
+/* Alkali Metal  */
+.alkali {
+  background: #f88379;
+}
+
+/* Alkaline Earth Metal  */
+.alkaline {
+  background: #ffc3a0;
+}
+
+/* Transition Metal  */
+.transition {
+  background: #e9ff08;
+}
+
+/* Polyatomic Non Metal  */
+.polyatomic {
+  background: #a3d2d5;
+}
+
+/* Diatomic Non Metal  */
+.diatomic {
+  background: #a3d5bf;
+}
+
+/* Post Transition Metal  */
+.post-transition {
+  background: #8eb1e7;
+}
+
+/* Metalloid  */
+.metalloid {
+  background: #5ed89c;
+}
+
+/* Actinide  */
+.actinide {
+  background: #ad87bd;
+}
+
