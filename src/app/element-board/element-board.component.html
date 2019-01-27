@@ -2,12 +2,8 @@
   <h1>Period Table of The Elements</h1>
 
   <div id="table">
-
-      <li *ngFor="let element of elements; let i = index">
-        <app-element
-         [attr.data-index]="i+1"
-        [element]="element"
-      ></app-element></li>
-
+    <li *ngFor="let element of elements">
+      <app-element [element]="element"></app-element>
+    </li>
   </div>
 </div>
