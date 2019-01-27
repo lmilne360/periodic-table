@@ -7,7 +7,6 @@ import { Element } from './model/element.model';
   styleUrls: ['./element.component.scss']
 })
 export class ElementComponent implements OnInit {
-  @Output() nameEmitter = new EventEmitter<string>();
   @Input()
   element: Element;
   elementClass: string[];
@@ -19,6 +18,5 @@ export class ElementComponent implements OnInit {
       `element-${this.element.number}`,
       `${this.element.category}`
     ];
-    this.nameEmitter.emit(`element-${this.element.number}`);
   }
 }
