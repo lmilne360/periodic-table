@@ -21,61 +21,74 @@
         font-size: 0.8vw;
         text-align: center;
     }
+    &:hover {
+        -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.6);
+        box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.6);
+    }
 }
 
 .lanthanide {
-  background: #cc99ff;
-  /* Put a space to seperate the split table  */
-  margin-top: 2.5vw;
+    background: #cc99ff;
+    /* Put a space to seperate the split table  */
+    margin-top: 2.5vw;
 }
+
 .element-57 {
-  margin: 0;
+    margin: 0;
 }
 
 /* GROUPS STYLING */
 
 /* Noble Gas  */
+
 .noble {
-  background: #f3d2e8;
+    background: #f3d2e8;
 }
 
 /* Alkali Metal  */
+
 .alkali {
-  background: #f88379;
+    background: #f88379;
 }
 
 /* Alkaline Earth Metal  */
+
 .alkaline {
-  background: #ffc3a0;
+    background: #ffc3a0;
 }
 
 /* Transition Metal  */
+
 .transition {
-  background: #e9ff08;
+    background: #e9ff08;
 }
 
 /* Polyatomic Non Metal  */
+
 .polyatomic {
-  background: #a3d2d5;
+    background: #a3d2d5;
 }
 
 /* Diatomic Non Metal  */
+
 .diatomic {
-  background: #a3d5bf;
+    background: #a3d5bf;
 }
 
 /* Post Transition Metal  */
+
 .post-transition {
-  background: #8eb1e7;
+    background: #8eb1e7;
 }
 
 /* Metalloid  */
+
 .metalloid {
-  background: #5ed89c;
+    background: #5ed89c;
 }
 
 /* Actinide  */
-.actinide {
-  background: #ad87bd;
-}
 
+.actinide {
+    background: #ad87bd;
+}
