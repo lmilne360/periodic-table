@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
 import data from '../../assets/PeriodicTableJSON.json';
 import { Element } from '../element/model/element.model';
 
@@ -8,11 +7,7 @@ import { Element } from '../element/model/element.model';
   templateUrl: './element-board.component.html',
   styleUrls: ['./element-board.component.scss']
 })
-export class ElementBoardComponent implements OnInit {
+export class ElementBoardComponent {
  elements: Element[] = data.elements;
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

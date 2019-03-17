@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Element } from './model/element.model';
 
 @Component({
@@ -10,7 +10,6 @@ export class ElementComponent implements OnInit {
   @Input()
   element: Element;
   elementClass: string[];
-  constructor() {}
 
   ngOnInit() {
     this.elementClass = [
